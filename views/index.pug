@@ -1,0 +1,7 @@
+extends base.pug
+
+block root
+    #root !{markup}
+
+    script window.__INITIAL_STATE__ = !{preloadedState}
+    script(src="/static/client.js")
